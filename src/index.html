@@ -10,9 +10,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <!-- <div class="main">
+    <script>
+      function createMessageElements() {
+        for (let i = 0; i < 5; i++) {
+          let message = document.createElement("article");
+          message.className = "message";
+          message.textContent = "This is message " + (i + 1);
+          document.body.appendChild(message);
+        }
+      }
+  
+      document.body.addEventListener("click", createMessageElements);
+    </script>
+    <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
-    </div> -->
+    </div>
   </body>
 </html>
